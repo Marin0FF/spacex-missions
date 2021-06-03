@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `SpaceX Mission History`,
+    description: `Learn about the launch history of SpaceX`,
+    author: `@Marin0FF`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,9 +28,21 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // This type will contain remote schema Query type
+        typeName: "SPACEXAPI",
+        // This is the field under which it's accessible
+        fieldName: "spacexapi",
+        // URL to query from
+        url: "https://api.spacex.land/graphql",
+      },
+    },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sass`,
   ],
 }

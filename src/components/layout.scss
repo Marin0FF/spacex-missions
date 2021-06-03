@@ -1,0 +1,20 @@
+@import "../styles/variables.scss";
+@import "/node_modules/bulma/bulma.sass";
+@import "/node_modules/react-vertical-timeline-component/style.min.css";
+/* CONTAINS ALL STYLE RULES FOR THE APP */
+.hero {
+  height: 100vh;
+  background-image: url("../images/heroImage.jpg");
+  background-position: center;
+  object-fit: cover;
+}
+.custom-line:before {
+  background-color: rgb(232, 232, 237) !important;
+}
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden,
+.vertical-timeline--animate .vertical-timeline-element-content.is-hidden {
+  display: block !important;
+}
+.vertical-timeline-element-date {
+  color: black;
+}

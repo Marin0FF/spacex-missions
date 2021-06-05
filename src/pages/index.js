@@ -49,7 +49,7 @@ const IndexPage = ({data}) => {
   return (
     // Render Layout
     <Layout>
-      <VerticalTimeline className="custom-line">
+      <VerticalTimeline name="timeline" className="custom-line">
         {data.spacexapi.launchesPast.map((launch) => {
           if (launch.launch_year !== currentYear) {
             return (

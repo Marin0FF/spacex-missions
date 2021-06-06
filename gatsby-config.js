@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `SpaceX Mission History`,
-    description: `Learn about the launch history of SpaceX`,
+    description: `Learn about the history of SpaceX launches`,
     author: `@Marin0FF`,
   },
   plugins: [
@@ -22,10 +22,6 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {

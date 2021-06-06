@@ -4,9 +4,12 @@
 /* CONTAINS ALL STYLE RULES FOR THE APP */
 .hero {
   height: 100vh;
-  background-image: url("../images/heroImage.jpg");
+  background-image: url("../images/heroImage.png");
   background-position: center;
-  object-fit: cover;
+  object-fit: contain;
+}
+.cta-btn {
+  box-shadow: $box-shadow;
 }
 .custom-line:before {
   background-color: rgb(232, 232, 237) !important;
@@ -17,4 +20,7 @@
 }
 .vertical-timeline-element-date {
   color: black;
+}
+.icon-centered {
+  width: 100% !important;
 }

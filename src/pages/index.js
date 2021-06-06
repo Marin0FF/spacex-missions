@@ -9,10 +9,6 @@ import Layout from '../components/layout'
 import TimelineOverview from '../components/timelineOverview'
 import TimelineEntry from '../components/timelineEntry'
 
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
-
 export const query = graphql`
   query {
     spacexapi {
@@ -41,6 +37,12 @@ const IndexPage = ({data}) => {
   const [sucessfulLaunches, setSucessfulLaunches] = useState(0);
   const [failedLaunches, setFailedLaunches] = useState(0);
   const currentYear = moment().format('YYYY');
+
+  useEffect(() => {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+  }, []);
 
   useEffect(() => {
     const  requestOptions = {

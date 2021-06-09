@@ -8,7 +8,7 @@ export default function TimelineOverview({total = 0, successful = 0, failed = 0}
 
     return (
         <div className="launches-overview columns my-0">
-            <div className="column has-background-info py-5">
+            <div className="column has-background-link py-5">
                 <div className="icon is-large icon-centered">
                     <Icon path={mdiRocketLaunchOutline}
                     title="User Profile"

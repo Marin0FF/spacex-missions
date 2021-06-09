@@ -112,7 +112,7 @@ const IndexPage = ({data}) => {
           );
         })}
         <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          iconStyle={{ background: 'rgb(50, 115, 220)', color: '#fff' }}
           icon={<Icon path={ mdiChevronUp }
             onClick={() => window.scrollTo({
               top: 0,

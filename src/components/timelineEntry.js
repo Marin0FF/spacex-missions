@@ -15,8 +15,8 @@ export default function TimelineEntry({
     return (
         <VerticalTimelineElement
             className="vertical-timeline-element"
-            contentStyle={{ background: launchSuccess === true ? 'rgb(33, 150, 243)' : 'rgb(244, 91, 105)', color: '#fff' }}
-            contentArrowStyle={{ borderRight: launchSuccess === true ? '7px solid rgb(33, 150, 243)' : '7px solid rgb(244, 91, 105)' }}
+            contentStyle={{ background: launchSuccess === true ? 'rgb(50, 115, 220)' : 'rgb(241, 70, 105)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: launchSuccess === true ? '7px solid rgb(50, 115, 220)' : '7px solid rgb(241, 70, 105)' }}
             date={moment(launchDate).format('DD MMMM YYYY')}
             iconStyle={{ background: 'rgb(5, 47, 95)', color: '#fff' }}
             icon={missionPatch !== null ? <img src={missionPatch}></img> : <Icon path={mdiRocketOutline} size={1} color="#ffffff" />}
